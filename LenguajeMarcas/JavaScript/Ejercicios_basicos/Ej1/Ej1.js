@@ -1,13 +1,10 @@
-document.addEventListener("DOMContentLoaded", function() {
-    
-    //Defino las variables a traves de las que vamos a accceder en el DOM del HTML
+document.addEventListener("DOMContentLoaded", function () {
+    // Selecciono los elementos del DOM que necesito para el ejercicio.
     const boton = document.getElementById("saludar");
     const mensaje = document.getElementById("mensaje");
 
-    //Defino el comportamiento del boton
-    boton.addEventListener("click", function() {
+    // Cuando el usuario hace clic, muestro el saludo en el parrafo.
+    boton.addEventListener("click", function () {
         mensaje.textContent = "¡Hola! Bienvenido a JavaScript.";
     });
-  
-
 });

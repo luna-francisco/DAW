@@ -1,22 +1,11 @@
-document.addEventListener("DOMContentLoaded", function() {
-    
-    //Definimos las variables donde vamos a almacenar los datos y las relacionamos con el HTML
+document.addEventListener("DOMContentLoaded", function () {
+    // Selecciono los elementos del DOM que necesito para el ejercicio.
+    const boton = document.getElementById("pedirNombre");
+    const mensaje = document.getElementById("resultado");
 
-    var boton = document.getElementById("pedirNombre");
-    var mensaje = document.getElementById("resultado");
-
-
-    //Comportamiento del boton al ser seleccionado
-    boton.addEventListener("click", function() { 
-
-        //Pedimos al usuario un dato a traves de un manesaje
-        var nombre = prompt("¿Cual es su nombre?");
-
-        //Devolvemos al usuario un mensaje en forma de cadena de texto 
+    // Cuando el usuario hace clic, pido su nombre y muestro el resultado.
+    boton.addEventListener("click", function () {
+        const nombre = prompt("¿Cual es su nombre?");
         mensaje.textContent = "Bienvenido " + nombre;
-
-
     });
-
-
 });
