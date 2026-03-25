@@ -333,6 +333,62 @@ En JavaScript algunas propiedades CSS cambian un poco de nombre. Por ejemplo:
 - en CSS es `background-color`
 - en JavaScript es `backgroundColor`
 
+## Criterio de codigo que estoy siguiendo
+
+Para que los ejercicios queden limpios, actuales y faciles de entender, estoy intentando mantener siempre el mismo criterio:
+
+- usar `const` por defecto,
+- usar `let` solo cuando el valor cambia,
+- seleccionar los elementos del DOM al principio,
+- usar `addEventListener()` para manejar eventos,
+- usar `textContent` cuando solo quiero insertar texto,
+- escribir nombres de variables claros,
+- seguir siempre una estructura parecida en todos los ejercicios.
+
+La estructura base que estoy repitiendo es esta:
+
+```js
+document.addEventListener("DOMContentLoaded", function () {
+  const boton = document.getElementById("...");
+  const mensaje = document.getElementById("...");
+
+  boton.addEventListener("click", function () {
+    // logica del ejercicio
+  });
+});
+```
+
+Esto me ayuda a que el codigo sea mas consistente y a trabajar de una forma mas cercana a buenas practicas actuales.
+
+## Ejercicios basicos trabajados
+
+En la carpeta [Ejercicios_basicos](/home/francisco/Escritorio/DAW/LenguajeMarcas/JavaScript/Ejercicios_basicos) estoy trabajando ejercicios centrados en manipulacion del DOM y eventos.
+
+Los ejercicios que he desarrollado hasta ahora cubren:
+
+- mostrar mensajes en pantalla,
+- pedir datos con `prompt()`,
+- sumar numeros,
+- hacer un contador de clics,
+- modificar varios elementos a la vez,
+- crear elementos dinamicamente en una lista,
+- eliminar elementos de una lista con comprobacion previa.
+
+## Lo que ya practico con estos ejercicios
+
+Con esta serie de ejercicios ya estoy practicando:
+
+- seleccion de elementos con `getElementById()` y `getElementsByClassName()`,
+- manejo de eventos con `addEventListener()`,
+- uso de `prompt()`,
+- conversion de datos cuando hace falta,
+- recorridos con `for`,
+- creacion de elementos con `createElement()`,
+- insercion con `appendChild()`,
+- eliminacion con `remove()`,
+- comprobaciones con `if / else`,
+- trabajo con colecciones y listas del DOM.
+
 ## Lo que necesito dominar para hacer los ejercicios
 
 Después de revisar los ejercicios básicos, lo que más necesito estudiar es esto:
