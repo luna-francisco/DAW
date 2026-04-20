@@ -1,5 +1,93 @@
 # Utilizacion avanzada de clases
 
+## Resumen introductorio
+
+Antes de llegar a la utilizacion avanzada de clases, primero tengo que tener clara la base: que es una clase, como se estructura y como se crean objetos a partir de ella.
+
+Una **clase** es como un molde. Define:
+
+- las caracteristicas del objeto, es decir, sus atributos,
+- y su comportamiento, es decir, sus metodos.
+
+De una sola clase pueden salir muchos objetos distintos. Todos comparten la misma estructura, pero cada uno puede tener valores diferentes en sus atributos.
+
+Ejemplo de idea:
+
+- clase `Coche`
+- objeto 1 -> matricula, marca, kilometros y anios concretos
+- objeto 2 -> mismos atributos, pero con valores distintos
+
+### Ideas base que necesito tener claras
+
+- una clase define un modelo
+- un objeto es una instancia concreta de esa clase
+- primero se declara una variable de tipo clase
+- despues se instancia el objeto, normalmente con `new`
+
+Ejemplo:
+
+```java
+Coche miCoche = new Coche();
+```
+
+### Atributos
+
+Los atributos representan las propiedades del objeto.
+
+Por ejemplo, en una clase `Alumno` o `Coche`, los atributos guardan la informacion propia de cada objeto.
+
+### Constructores
+
+Los constructores son metodos especiales que sirven para inicializar automaticamente los objetos cuando se crean.
+
+Lo importante es recordar que:
+
+- se llaman igual que la clase
+- no devuelven nada
+- puede haber varios si cambian los parametros
+
+Ejemplo:
+
+```java
+Alumno al1 = new Alumno("Monica", 6);
+```
+
+### Palabra clave `this`
+
+`this` hace referencia al propio objeto actual.
+
+Se usa mucho en constructores para distinguir los atributos del objeto de las variables locales.
+
+### Metodos
+
+Los metodos representan lo que el objeto puede hacer.
+
+Se ejecutan a traves de un objeto y normalmente trabajan con los atributos del propio objeto.
+
+### Encapsulacion
+
+La encapsulacion sirve para controlar que partes de una clase pueden verse o modificarse desde fuera.
+
+Aqui entran en juego:
+
+- `private`
+- `public`
+- y el uso de `getters` y `setters`
+
+### Metodos y atributos estaticos
+
+Los elementos `static` pertenecen a la clase y no a un objeto concreto.
+
+Por eso:
+
+- se usan a traves de la clase,
+- no dependen de una instancia concreta,
+- y su valor puede ser comun para todos los objetos.
+
+### Idea general de esta introduccion
+
+Todo este bloque previo me sirve para entender mejor lo que viene despues: herencia, polimorfismo, clases abstractas y el resto de conceptos avanzados. Si no tengo clara la diferencia entre clase, objeto, atributo, constructor y metodo, la parte avanzada se hace mucho mas dificil.
+
 ## Contenido
 
 1. Composicion de clases
