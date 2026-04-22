@@ -21,6 +21,7 @@ Desktop.ini
 .vscode/
 .idea/
 *.iml
+.codex/
 
 # Eclipse / workspace metadata
 .metadata/
